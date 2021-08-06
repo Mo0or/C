@@ -6,14 +6,15 @@ int main(void){
 
     printf("체중 : "); scanf("%d", &a);
     printf("키 : "); scanf("%d", &b);
+    c = b*0.01;
 
-    if (a / (b * b) < 18){
+    if (a / (c * c) < 18){
         printf("저체중입니다.");
     }
-    else if (a / (b * b) <= 23){
+    else if (a / (c * c) <= 23){
         printf("정상입니다.");
     }
-    else if (a / (b * b) <= 25){
+    else if (a / (c * c) <= 25){
         printf("비만입니다.");
     }
     else{
